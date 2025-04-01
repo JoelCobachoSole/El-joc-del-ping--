@@ -1,3 +1,4 @@
+package El_joc_del_pingüí;
 
 public class CPU {
 
