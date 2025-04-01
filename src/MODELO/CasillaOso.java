@@ -1,6 +1,6 @@
-package El_joc_del_pingüí;
+package MODELO;
 
-public class EventoDadoLento {
+public class CasillaOso {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

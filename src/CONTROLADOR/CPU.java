@@ -1,6 +1,6 @@
-package El_joc_del_pingüí;
+package CONTROLADOR;
 
-public class EventoBolaDeNieve {
+public class CPU {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,6 +1,6 @@
-package El_joc_del_pingüí;
+package MODELO;
 
-public class Juego {
+public class Tablero {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
