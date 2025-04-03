@@ -1,10 +1,6 @@
 package MODELO;
 
-public class EventoBolaDeNieve {
+public class EventoBolaDeNieve extends Evento{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

@@ -1,10 +1,6 @@
 package MODELO;
 
-public class EventoPerderTurno {
+public class EventoPerderTurno extends Evento{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

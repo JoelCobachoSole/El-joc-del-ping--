@@ -1,10 +1,6 @@
 package MODELO;
 
-public class EventoPez {
+public class EventoPez extends Evento{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

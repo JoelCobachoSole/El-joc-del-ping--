@@ -1,10 +1,6 @@
 package MODELO;
 
-public class Evento {
+public abstract class Evento {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

@@ -1,10 +1,7 @@
 package MODELO;
 
-public class EventoDadoRapido {
+public class EventoDadoRapido extends Evento{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
 
 }
