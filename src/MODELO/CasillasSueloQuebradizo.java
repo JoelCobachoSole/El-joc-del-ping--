@@ -1,10 +1,6 @@
 package MODELO;
 
-public class CasillasSueloQuebradizo {
+public class CasillasSueloQuebradizo extends Casilla{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }
