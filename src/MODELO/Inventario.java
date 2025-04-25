@@ -1,10 +1,20 @@
-package MODELO;
+package modelo;
+
+import java.util.ArrayList;
 
 public class Inventario {
+	private ArrayList<Item> lista;
+	
+	public Inventario(ArrayList<Item> lista) {
+		this.lista = lista;
+	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public ArrayList<Item> getLista() {
+		return lista;
+	}
 
+	public void setLista(ArrayList<Item> lista) {
+		this.lista = lista;
 	}
 
 }

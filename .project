@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>El joc del pingüí (DAM1)</name>
+	<name>Pinguino</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1745334893391</id>
+			<id>1745600755839</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
