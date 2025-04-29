@@ -8,6 +8,8 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
+import javafx.animation.TranslateTransition;
+import javafx.util.Duration;
 
 public class pantallaJuegoController {
 
@@ -91,18 +93,37 @@ public class pantallaJuegoController {
     private void moveP1(int steps) {
         p1Position += steps;
 
-        //Bound player
+        // Bound player
         if (p1Position >= 50) {
             p1Position = 49; // 5 columns * 10 rows = 50 cells (index 0 to 49)
         }
 
-        //Check row and column
+        // Check row and column
         int row = p1Position / COLUMNS;
         int col = p1Position % COLUMNS;
 
-        //Change P1 property to match row and column
-        GridPane.setRowIndex(P1, row);
-        GridPane.setColumnIndex(P1, col);
+        // Get current row and column
+        int currentRow = GridPane.getRowIndex(P1) != null ? GridPane.getRowIndex(P1) : 0;
+        int currentCol = GridPane.getColumnIndex(P1) != null ? GridPane.getColumnIndex(P1) : 0;
+
+        // Calculate pixel offsets for animation
+        double offsetX = (col - currentCol) * tablero.getWidth() / COLUMNS;
+        double offsetY = (row - currentRow) * tablero.getHeight() / (50 / COLUMNS);
+
+        // Create a TranslateTransition for smooth movement
+        TranslateTransition transition = new TranslateTransition(Duration.millis(500), P1);
+        transition.setByX(offsetX);
+        transition.setByY(offsetY);
+
+        // After the animation, update the GridPane position
+        transition.setOnFinished(event -> {
+            GridPane.setRowIndex(P1, row);
+            GridPane.setColumnIndex(P1, col);
+            P1.setTranslateX(0); // Reset translation
+            P1.setTranslateY(0);
+        });
+
+        transition.play();
     }
 
     @FXML
