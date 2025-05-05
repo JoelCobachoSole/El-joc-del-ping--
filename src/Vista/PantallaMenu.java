@@ -1,5 +1,5 @@
-package vista;
+package Vista;
 
-public class pantallaMenu {
+public class PantallaMenu {
 
 }

@@ -1,4 +1,4 @@
-package modelo;
+package MODELO;
 
 public class Item {
 	private String nombre;

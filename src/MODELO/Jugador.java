@@ -1,4 +1,4 @@
-package modelo;
+package MODELO;
 
 public abstract class Jugador {
 	private int posicion;

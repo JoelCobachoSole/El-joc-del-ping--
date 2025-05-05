@@ -1,4 +1,4 @@
-package modelo;
+package MODELO;
 
 public class Foca extends Jugador {
 	private boolean soborno;

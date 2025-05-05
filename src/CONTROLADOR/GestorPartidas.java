@@ -1,6 +1,6 @@
-package controlador;
+package CONTROLADOR;
 
-public class gestorPartidas {
+public class GestorPartidas {
 	private String urlBBDD;
 	private String username;
 	private String password;

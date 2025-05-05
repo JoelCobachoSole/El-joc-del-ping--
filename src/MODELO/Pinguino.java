@@ -1,4 +1,4 @@
-package modelo;
+package MODELO;
 
 public class Pinguino extends Jugador {
 	private Inventario inv;
